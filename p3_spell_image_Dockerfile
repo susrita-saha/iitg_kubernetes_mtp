@@ -47,7 +47,7 @@ RUN apt-get install -y locales locales-all
 ENV LC_ALL en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
-#FROM buildpack-deps:jessie-curl
+FROM buildpack-deps:jessie-curl
 
 ENV ASPELL_SERVER ftp://ftp.gnu.org/gnu/aspell
 ENV ASPELL_VERSION 0.60.6.1
