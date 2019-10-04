@@ -33,6 +33,9 @@ RUN pip3 --no-cache-dir install PyEMD
 
 RUN pip3 --no-cache-dir install pytorch-pretrained-bert==0.6.1 torch==1.0.1.post2 seqeval==0.0.5 nltk
 
+# install nltk stopwords and punkt
+RUN python -m nltk.downloader punkt && python -m nltk.downloader stopwords
+
 RUN pip3 --no-cache-dir install pyspellchecker textblob
 
 RUN pip3 --no-cache-dir install networkx pathlib pygraphviz
